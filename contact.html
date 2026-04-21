@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - 976 Influence | Nous Joindre à Mayotte</title>
+    <meta name="description" content="Contactez l'association 976 Influence. Nous sommes à votre écoute pour toute question sur nos actions, pour devenir bénévole ou partenaire.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom glass-header">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-logo">
+                    976 INFLUENCE
+                    <span class="brand-sub">Lutte contre la délinquance juvénile</span>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actions.html">Actions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="s-impliquer.html">S'impliquer</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="don.html" class="btn-premium btn-premium-primary">
+                            <i class="fa-solid fa-heart"></i> Faire un don
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding bg-light-blue mt-5">
+        <div class="container text-center pt-5">
+            <h1 class="display-4 fw-bold reveal">Nous <span class="text-gradient">Contacter</span></h1>
+            <p class="text-muted reveal">Une question ? Une envie d'agir ? Écrivez-nous.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 reveal">
+                    <div class="glass-card p-4 h-100 border-0 shadow">
+                        <h3 class="fw-bold mb-4">Nos Coordonnées</h3>
+                        <div class="mb-5">
+                            <div class="d-flex gap-4 mb-4">
+                                <div class="bg-blue-light p-3 rounded-circle text-primary"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Siège Social</h6>
+                                    <p class="text-muted">Mairie de Bouéni, 97620 Bouéni, Mayotte</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-4 mb-4">
+                                <div class="bg-blue-light p-3 rounded-circle text-primary"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Téléphone</h6>
+                                    <p class="text-muted">07 75 78 07 31</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-4 mb-4">
+                                <div class="bg-blue-light p-3 rounded-circle text-primary"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Email</h6>
+                                    <p class="text-muted">976influence@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="fw-bold mb-4">Suivez-nous</h4>
+                        <div class="d-flex gap-3">
+                            <a href="https://www.facebook.com/people/Asso-976influence/61571716615623/" class="btn btn-outline-primary rounded-circle" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal">
+                    <div class="glass-card p-4 border-0 shadow">
+                        <h3 class="fw-bold mb-4">Envoyer un message</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">Nom complet</label>
+                                    <input type="text" class="form-control rounded-pill border-0 bg-light p-3" id="name" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">Email</label>
+                                    <input type="email" class="form-control rounded-pill border-0 bg-light p-3" id="email" placeholder="votre@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small">Sujet</label>
+                                    <select class="form-select rounded-pill border-0 bg-light p-3" id="subject">
+                                        <option value="General">Renseignement général</option>
+                                        <option value="Volunteer">Devenir bénévole</option>
+                                        <option value="Partner">Devenir partenaire</option>
+                                        <option value="Donation">Question sur les dons</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small">Votre message</label>
+                                    <textarea class="form-control rounded-4 border-0 bg-light p-3" id="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4 text-center">
+                                    <button type="submit" class="btn-premium btn-premium-primary w-100 py-3">
+                                        <i class="fa-solid fa-paper-plane me-2"></i> Envoyer le message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formStatus" class="mt-4 text-center d-none">
+                            <div class="alert alert-success d-inline-block px-5 rounded-pill">
+                                Message envoyé avec succès !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo text-white">976 INFLUENCE</a>
+                    <p class="text-white-50">Association loi 1901 engagée pour la jeunesse et la cohésion sociale à Mayotte depuis sa création. Ensemble, faisons la différence.</p>
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/people/Asso-976influence/61571716615623/" class="social-circle text-white" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-circle text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 footer-links px-md-5">
+                    <h5>Navigation</h5>
+                    <ul class="p-0">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="actions.html">Nos actions</a></li>
+                        <li><a href="s-impliquer.html">S'impliquer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-links">
+                    <h5>Lien Utiles</h5>
+                    <ul class="p-0">
+                        <li><a href="don.html">Faire un don</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-3 text-primary"></i> 97620 Bouéni, Mayotte</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-3 text-primary"></i> 07 75 78 07 31</li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-3 text-primary"></i> 976influence@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2026 976 Influence - Association de lutte contre la délinquance juvénile. Réalisé avec ❤️ pour Mayotte.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('d-none');
+            document.getElementById('formStatus').classList.remove('d-none');
+            
+            // Logic for pre-filling subject from URL if any
+            const urlParams = new URLSearchParams(window.location.search);
+            const subjectParam = urlParams.get('subject');
+            if(subjectParam) {
+               // Subject was already handled or could be used here to pre-select
+            }
+        });
+
+        window.addEventListener('load', () => {
+             const urlParams = new URLSearchParams(window.location.search);
+             const subjectParam = urlParams.get('subject');
+             if(subjectParam) {
+                 const select = document.getElementById('subject');
+                 // Simply adding a logic to select based on search
+                 if(subjectParam.includes('Don')) select.value = 'Donation';
+             }
+        });
+    </script>
+</body>
+</html>

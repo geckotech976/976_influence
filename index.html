@@ -3,227 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>976 Influence - Lutte contre la délinquance juvénile</title>
-    <meta name="description" content="L'association 976 Influence agit pour prévenir, réduire et lutter contre la délinquance juvénile à Mayotte. Découvrez nos actions pour la cohésion sociale." />
+    <title>976 Influence - Accueil | Ensemble pour la jeunesse de Mayotte</title>
+    <meta name="description" content="Association 976 Influence à Mayotte. Nous luttons contre la délinquance juvénile par la prévention, la médiation et la cohésion sociale.">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <div class="logo-wings">
-                    <span class="wing top-left"></span>
-                    <span class="wing top-right"></span>
-                    <span class="wing bottom-left"></span>
-                    <span class="wing bottom-right"></span>
-                </div>
-                <div class="logo-text">
-                    <span class="main-text">976 INFLUENCE</span>
-                    <span class="sub-text">Lutte contre la délinquance juvénile</span>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom glass-header">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-logo">
+                    976 INFLUENCE
+                    <span class="brand-sub">Lutte contre la délinquance juvénile</span>
                 </div>
             </a>
-            
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="#a-propos" class="nav-link">À propos</a></li>
-                    <li class="nav-item"><a href="#actions" class="nav-link">Nos actions</a></li>
-                    <li class="nav-item"><a href="#s-impliquer" class="nav-link">S'impliquer</a></li>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actions.html">Actions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="s-impliquer.html">S'impliquer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="don.html" class="btn-premium btn-premium-primary">
+                            <i class="fa-solid fa-heart"></i> Faire un don
+                        </a>
+                    </li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-            <a href="#don" class="btn btn-primary d-none-mobile">Faire un don</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero">
-        <div class="hero-bg">
-            <img src="assets/images/hero.png" alt="Jeunesse à Mayotte" class="bg-img">
-            <div class="bg-overlay"></div>
-        </div>
-        <div class="container hero-content">
-            <h1 class="hero-title">Lutte contre la <span class="gradient-text-1">délinquance juvénile</span> à Mayotte</h1>
-            <p class="hero-subtitle">Ensemble, cultivons la cohésion sociale, l'espoir et le vivre-ensemble pour la jeunesse d'aujourd'hui et de demain.</p>
-            <div class="hero-actions">
-                <a href="#actions" class="btn btn-primary">Découvrir nos actions</a>
-                <a href="#a-propos" class="btn btn-secondary glass-btn">Qui sommes-nous ?</a>
-            </div>
-            <div class="scroll-indicator">
-                <a href="#a-propos"><i class="fa-solid fa-chevron-down"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- À Propos Section -->
-    <section id="a-propos" class="about section-padding">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2 class="section-title">Notre Mission</h2>
-                <div class="title-underline"></div>
-                <p class="lead-text">976 Influence a pour vocation de prévenir, réduire et lutter contre la délinquance juvénile à Mayotte.</p>
-                <p>Face aux défis sociaux grandissants, notre association se positionne comme un acteur de terrain engagé. Nous croyons fermement qu'il est possible de changer la trajectoire des jeunes en difficulté grâce à un accompagnement bienveillant et des actions préventives ciblées.</p>
-                <p>Notre engagement quotidien vise à <strong>contribuer au renforcement de la cohésion sociale, du vivre-ensemble et de la médiation communautaire</strong>. Nous œuvrons pour restaurer le dialogue entre les générations et au sein des quartiers.</p>
-                
-                <ul class="check-list">
-                    <li><i class="fa-solid fa-check"></i> Approche préventive et éducative</li>
-                    <li><i class="fa-solid fa-check"></i> Promotion du vivre-ensemble</li>
-                    <li><i class="fa-solid fa-check"></i> Soutien aux familles en difficulté</li>
-                </ul>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="assets/images/community.png" alt="Cohésion et médiation" class="about-img">
-                <div class="experience-badge glass-card">
-                    <span class="number">Ensemble</span>
-                    <span class="text">pour Mayotte</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nos Actions Section -->
-    <section id="actions" class="actions section-padding bg-gray">
+    <section class="hero-section">
+        <img src="assets/images/hero.png" alt="Jeunesse Mahoraise" class="hero-bg-image">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="section-header center">
-                <h2 class="section-title">Nos champs d'action</h2>
-                <div class="title-underline center-underline"></div>
-                <p class="section-subtitle">Découvrez comment nous intervenons sur le terrain pour bâtir un avenir meilleur.</p>
-            </div>
-            
-            <div class="actions-grid">
-                <!-- Action 1 -->
-                <div class="action-card">
-                    <div class="card-icon gradient-bg-1">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Prévention & Sensibilisation</h3>
-                        <p>Interventions dans les quartiers et les milieux scolaires pour sensibiliser les jeunes aux risques de la délinquance et promouvoir des comportements civiques.</p>
-                    </div>
-                </div>
-                
-                <!-- Action 2 -->
-                <div class="action-card">
-                    <div class="card-icon gradient-bg-2">
-                        <i class="fa-solid fa-people-arrows"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Médiation Communautaire</h3>
-                        <p>Mise en place d'espaces de dialogue pour résoudre pacifiquement les conflits entre les jeunes, ou avec les institutions, et favoriser l'apaisement social.</p>
-                    </div>
-                </div>
-                
-                <!-- Action 3 -->
-                <div class="action-card">
-                    <div class="card-icon gradient-bg-3">
-                        <i class="fa-solid fa-handshake-angle"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Soutien à la Cohésion Sociale</h3>
-                        <p>Organisation d'événements sportifs, culturels et citoyens pour rassembler la jeunesse et recréer du lien social dans les différents villages de Mayotte.</p>
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="hero-title reveal">Agir pour la <span class="text-gradient">jeunesse mahoraise</span></h1>
+                    <p class="hero-subtitle reveal">976 Influence s'engage au quotidien pour prévenir la délinquance, renforcer la cohésion sociale et offrir un avenir meilleur aux jeunes de Mayotte.</p>
+                    <div class="d-flex gap-3 flex-wrap reveal">
+                        <a href="actions.html" class="btn-premium btn-premium-primary">Nos actions de terrain</a>
+                        <a href="a-propos.html" class="btn-premium btn-premium-outline">Qui sommes-nous ?</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Impact Numbers -->
-    <section class="impact gradient-bg-1">
-        <div class="container impact-grid">
-            <div class="impact-item">
-                <div class="counter" data-target="150">0</div>
-                <span class="impact-label">Jeunes accompagnés</span>
-            </div>
-            <div class="impact-item">
-                <div class="counter" data-target="45">0</div>
-                <span class="impact-label">Actions de prévention</span>
-            </div>
-            <div class="impact-item">
-                <div class="counter" data-target="12">0</div>
-                <span class="impact-label">Quartiers pacifiés</span>
-            </div>
-            <div class="impact-item">
-                <div class="counter" data-target="30">0</div>
-                <span class="impact-label">Bénévoles engagés</span>
+    <!-- Brief Focus Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 reveal">
+                    <img src="assets/images/community.png" alt="Communauté 976" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 reveal">
+                    <h6 class="text-primary fw-bold text-uppercase mb-3">Notre Engagement</h6>
+                    <h2 class="mb-4 display-5 fw-bold">Restauration du <span class="text-gradient">vivre-ensemble</span></h2>
+                    <p class="lead mb-4">Basée à Bouéni, l'association 976 Influence intervient sur toute l'île pour créer des liens de confiance entre les jeunes et les institutions.</p>
+                    <div class="d-flex gap-3 mb-2">
+                        <div class="bg-blue-light p-3 rounded-circle text-primary">
+                            <i class="fa-solid fa-handshake-angle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Médiation de proximité</h5>
+                            <p>Nous sommes présents dans les quartiers pour résoudre pacifiquement les conflits.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="bg-blue-light p-3 rounded-circle text-primary">
+                            <i class="fa-solid fa-leaf fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Citoyenneté & Écologie</h5>
+                            <p>Actions de nettoyage mensuel pour sensibiliser au respect de notre environnement.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- S'impliquer Section -->
-    <section id="s-impliquer" class="involve section-padding">
-        <div class="container involve-box glass-card-strong">
-            <div class="involve-content">
-                <h2>Prêt·e à aider la prochaine génération ?</h2>
-                <p>Que ce soit par un don, un partenariat ou en devenant bénévole, votre soutien est essentiel pour pérenniser nos actions de prévention et de médiation à Mayotte.</p>
-                <div class="involve-buttons">
-                    <a href="#don" class="btn btn-primary btn-large">Faire un don</a>
-                    <a href="mailto:contact@976influence.yt" class="btn btn-outline btn-large">Devenir bénévole</a>
+    <!-- Highlight Actions -->
+    <section class="section-padding bg-light-blue">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <h2 class="display-6 fw-bold">Dernières <span class="text-gradient">Actions</span></h2>
+                <p class="text-muted">Un aperçu de notre impact direct sur le terrain.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4 reveal">
+                    <div class="action-card bg-white shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/action de netoyage plage.jpeg" alt="Nettoyage Plage">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold">Nettoyage de plage</h5>
+                            <p class="text-muted small">Chaque premier samedi du mois, nous mobilisons les jeunes pour protéger notre littoral à Bouéni.</p>
+                            <a href="actions.html" class="text-primary fw-bold">En savoir plus <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 reveal">
+                    <div class="action-card bg-white shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/action de netoyage plage 2 .jpeg" alt="Médiation Jeunes">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold">Tournois de Cohésion</h5>
+                            <p class="text-muted small">Le sport comme outil de dialogue et de respect mutuel entre les différents quartiers.</p>
+                            <a href="actions.html" class="text-primary fw-bold">En savoir plus <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 reveal">
+                    <div class="action-card bg-white shadow-sm border-0">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/action de netoyage plage 3 .jpeg" alt="Sensibilisation Scolaire">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold">Prévention Juvénile</h5>
+                            <p class="text-muted small">Interventions pédagogiques pour déconstruire les mécanismes de la violence.</p>
+                            <a href="actions.html" class="text-primary fw-bold">En savoir plus <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="logo-text">
-                    <span class="main-text">976 INFLUENCE</span>
-                    <span class="sub-text">Lutte contre la délinquance juvénile</span>
+    <footer class="footer-premium mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo text-white">976 INFLUENCE</a>
+                    <p class="text-white-50">Association loi 1901 engagée pour la jeunesse et la cohésion sociale à Mayotte depuis sa création. Ensemble, faisons la différence.</p>
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/people/Asso-976influence/61571716615623/" class="social-circle text-white" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-circle text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
                 </div>
-                <p>Ensemble, nous construisons un avenir plus sûr et plus solidaire pour la jeunesse de Mayotte.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <div class="col-lg-2 footer-links px-md-5">
+                    <h5>Navigation</h5>
+                    <ul class="p-0">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="actions.html">Nos actions</a></li>
+                        <li><a href="s-impliquer.html">S'impliquer</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-links">
+                    <h5>Lien Utiles</h5>
+                    <ul class="p-0">
+                        <li><a href="don.html">Faire un don</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-3 text-primary"></i> 97620 Bouéni, Mayotte</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-3 text-primary"></i> 07 75 78 07 31</li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-3 text-primary"></i> 976influence@gmail.com</li>
+                    </ul>
                 </div>
             </div>
-            
-            <div class="footer-links">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#a-propos">À propos</a></li>
-                    <li><a href="#actions">Nos actions</a></li>
-                    <li><a href="#s-impliquer">S'impliquer</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-contact">
-                <h4>Nous Joindre</h4>
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> Mayotte, France</li>
-                    <li><i class="fa-solid fa-phone"></i> +262 639 00 00 00</li>
-                    <li><i class="fa-solid fa-envelope"></i> contact@976influence.yt</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2026 Association 976 Influence. Tous droits réservés.</p>
-            <div class="legal-links">
-                <a href="#">Mentions légales</a>
-                <a href="#">Politique de confidentialité</a>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2026 976 Influence - Association de lutte contre la délinquance juvénile. Réalisé avec ❤️ pour Mayotte.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

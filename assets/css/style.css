@@ -6,21 +6,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-    /* Primary Palette (Mayotte/France Inspired) */
-    --color-blue: #0056b3;
-    --color-blue-dark: #003d80;
-    --color-blue-light: #e6f0ff;
-    --color-red: #dc3545;
-    --color-green: #28a745;
-    --color-white: #ffffff;
-    --color-dark: #121212;
-    --color-gray: #6c757d;
-    --color-gray-light: #f8f9fa;
+    /* New Color Palette */
+    --almond-silk: #E2C0B6;
+    --carbon-black: #1B1A1A;
+    --dusty-rose: #D37574;
+    --silver: #BCB9BB;
+    --rosy-granite: #8D7C83;
 
+    /* Primary Mappings */
+    --color-primary: var(--dusty-rose);
+    --color-secondary: var(--rosy-granite);
+    --color-accent: var(--almond-silk);
+    --color-dark: var(--carbon-black);
+    --color-light: var(--silver);
+    --color-white: #ffffff;
+    
     /* Semantic Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--color-blue), #00a8ff);
-    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
-    --gradient-dark: linear-gradient(135deg, #1e293b, #0f172a);
+    --gradient-primary: linear-gradient(135deg, var(--dusty-rose), var(--rosy-granite));
+    --gradient-glass: linear-gradient(135deg, rgba(226, 192, 182, 0.4), rgba(255, 255, 255, 0.1));
+    --gradient-dark: linear-gradient(135deg, var(--carbon-black), var(--rosy-granite));
+    --gradient-premium: linear-gradient(45deg, #E2C0B6, #1B1A1A, #D37574, #BCB9BB, #8D7C83);
     
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -28,9 +33,9 @@
 
     /* Effects */
     --glass-blur: blur(12px);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.2);
-    --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --glass-border: 1px solid rgba(226, 192, 182, 0.2);
+    --shadow-premium: 0 10px 30px rgba(27, 26, 26, 0.08);
+    --shadow-glass: 0 8px 32px 0 rgba(141, 124, 131, 0.15);
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -82,7 +87,7 @@ img {
 }
 
 .bg-light-blue {
-    background-color: var(--color-blue-light);
+    background-color: var(--almond-silk);
 }
 
 .text-gradient {
@@ -111,29 +116,29 @@ img {
 .btn-premium-primary {
     background: var(--gradient-primary);
     color: white;
-    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+    box-shadow: 0 4px 15px rgba(211, 117, 116, 0.3);
 }
 
 .btn-premium-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.4);
+    box-shadow: 0 8px 25px rgba(211, 117, 116, 0.4);
     color: white;
 }
 
 .btn-premium-outline {
     background: transparent;
-    border: 2px solid var(--color-blue);
-    color: var(--color-blue);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
 }
 
 .btn-premium-outline:hover {
-    background: var(--color-blue);
+    background: var(--color-primary);
     color: white;
 }
 
 .btn-premium-white {
     background: white;
-    color: var(--color-blue);
+    color: var(--color-primary);
 }
 
 /* --- Glassmorphism --- */
@@ -172,21 +177,38 @@ img {
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-.navbar-brand .brand-logo {
-    font-family: var(--font-heading);
-    font-weight: 900;
-    font-size: 24px;
-    color: var(--color-blue);
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-text-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.brand-logo .brand-sub {
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--color-gray);
+.brand-name {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--color-dark);
     line-height: 1;
+}
+
+.brand-sub {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    line-height: 1.2;
+    margin-top: 4px;
 }
 
 .nav-link {
@@ -203,7 +225,7 @@ img {
     left: 0;
     width: 0;
     height: 3px;
-    background: var(--color-red);
+    background: var(--color-primary);
     transition: var(--transition);
     border-radius: 50px;
 }
@@ -247,12 +269,12 @@ img {
     font-size: 64px;
     font-weight: 900;
     margin-bottom: 24px;
-    color: var(--color-blue);
+    color: var(--color-dark);
 }
 
 .hero-subtitle {
     font-size: 20px;
-    color: var(--color-gray);
+    color: var(--color-secondary);
     margin-bottom: 40px;
     max-width: 600px;
 }
@@ -304,7 +326,7 @@ img {
 }
 
 .social-circle:hover {
-    background: var(--color-blue);
+    background: var(--color-primary);
     transform: translateY(-5px);
 }
 

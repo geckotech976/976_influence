@@ -111,11 +111,12 @@ img {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .btn-premium-primary {
-    background: var(--gradient-primary);
-    color: white;
+    background: var(--gradient-primary) !important;
+    color: white !important;
     box-shadow: 0 4px 15px rgba(211, 117, 116, 0.3);
 }
 
@@ -178,44 +179,37 @@ img {
 }
 
 .navbar-brand img {
-    height: 60px;
-    width: auto;
-    border-radius: 8px;
+    height: 60px !important;
+    width: auto !important;
+    max-height: 60px;
+    display: block;
+    object-fit: contain;
 }
 
 .brand-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    flex-shrink: 0;
 }
 
 .brand-text-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: none; /* Hide extra text if logo already has it */
 }
 
-.brand-name {
-    font-family: var(--font-heading);
-    font-weight: 900;
-    font-size: 22px;
-    color: var(--color-dark);
-    line-height: 1;
-}
-
-.brand-sub {
-    font-size: 10px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--color-secondary);
-    line-height: 1.2;
-    margin-top: 4px;
+@media (min-width: 1200px) {
+    .brand-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+    }
 }
 
 .nav-link {
     font-weight: 600;
-    margin: 0 15px;
+    margin: 0 12px;
     position: relative;
     color: var(--color-dark) !important;
+    white-space: nowrap;
 }
 
 .nav-link::after {

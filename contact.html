@@ -188,15 +188,18 @@
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            this.classList.add('d-none');
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const mailTo = '976influence@gmail.com';
+
+            const body = `Nom : ${name}\r\nEmail : ${email}\r\nSujet : ${subject}\r\n\r\n${message}`;
+            const mailtoUrl = `mailto:${mailTo}?subject=${encodeURIComponent('Message depuis le site - ' + subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoUrl;
             document.getElementById('formStatus').classList.remove('d-none');
-            
-            // Logic for pre-filling subject from URL if any
-            const urlParams = new URLSearchParams(window.location.search);
-            const subjectParam = urlParams.get('subject');
-            if(subjectParam) {
-               // Subject was already handled or could be used here to pre-select
-            }
         });
 
         window.addEventListener('load', () => {
@@ -204,8 +207,9 @@
              const subjectParam = urlParams.get('subject');
              if(subjectParam) {
                  const select = document.getElementById('subject');
-                 // Simply adding a logic to select based on search
                  if(subjectParam.includes('Don')) select.value = 'Donation';
+                 if(subjectParam.includes('Bénévole') || subjectParam.includes('Volunteer')) select.value = 'Volunteer';
+                 if(subjectParam.includes('Partenaire')) select.value = 'Partner';
              }
         });
     </script>
